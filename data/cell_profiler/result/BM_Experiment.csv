@@ -1,0 +1,648 @@
+Key,Value
+CellProfiler_Version,4.1.3
+ChannelType_ATF6,Grayscale
+ChannelType_BetaTubulin,Grayscale
+ChannelType_ConcanavalinA,Grayscale
+ChannelType_DAPI,Grayscale
+ChannelType_GOLPH4,Grayscale
+ChannelType_HSP60,Grayscale
+ChannelType_Nucleolin,Grayscale
+ChannelType_Phalloidin,Grayscale
+ChannelType_Sortilin,Grayscale
+ChannelType_TOM20,Grayscale
+ChannelType_WGA,Grayscale
+ImageSet_Zip_Dictionary,b'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48T01FIHhtbG5zPSJodHRwOi8vd3d3Lm9wZW5taWNyb3Njb3B5Lm9yZy9TY2hlbWFzL09NRS8yMDE2LTA2Ij48SW1hZ2UgSUQ9IkFURjYiPjxQaXhlbHMgRGltZW5zaW9uT3JkZXI9IlhZQ1pUIiBJRD0iUGl4ZWxzOkFURjYiIFNpemVUPSIxIiBTaXplWD0iMSIgU2l6ZVk9IjEiPjxUaWZmRGF0YSBGaXJzdEM9IjAiIEZpcnN0VD0iMCIgRmlyc3RaPSIwIiBJRkQ9IjAiIFBsYW5lQ291bnQ9IjEiPjxVVUlEIEZpbGVOYW1lPSJmaWxlOi8vL0M6L1VzZXJzL212ZW5rYXRlc2FuNy9Eb2N1bWVudHMvUHl0aG9uJTIwU2NyaXB0cy9NdWx0aXBsZXhPcmdhbmVsbGVzL2RhdGFfY2VsbF9wcm9maWxlci9CTV9iZ3N1Yi9jZWxsXzE1L0JNXzE1X0FURjYudGlmIi8+PC9UaWZmRGF0YT48UGxhbmUgVGhlQz0iMCIgVGhlVD0iMCIgVGhlWj0iMCIvPjwvUGl4ZWxzPjwvSW1hZ2U+PEltYWdlIElEPSJCZXRhVHVidWxpbiI+PFBpeGVscyBEaW1lbnNpb25PcmRlcj0iWFlDWlQiIElEPSJQaXhlbHM6QmV0YVR1YnVsaW4iIFNpemVUPSIxIiBTaXplWD0iMSIgU2l6ZVk9IjEiPjxUaWZmRGF0YSBGaXJzdEM9IjAiIEZpcnN0VD0iMCIgRmlyc3RaPSIwIiBJRkQ9IjAiIFBsYW5lQ291bnQ9IjEiPjxVVUlEIEZpbGVOYW1lPSJmaWxlOi8vL0M6L1VzZXJzL212ZW5rYXRlc2FuNy9Eb2N1bWVudHMvUHl0aG9uJTIwU2NyaXB0cy9NdWx0aXBsZXhPcmdhbmVsbGVzL2RhdGFfY2VsbF9wcm9maWxlci9CTV9iZ3N1Yi9jZWxsXzE1L0JNXzE1X0JldGFUdWJ1bGluLnRpZiIvPjwvVGlmZkRhdGE+PFBsYW5lIFRoZUM9IjAiIFRoZVQ9IjAiIFRoZVo9IjAiLz48L1BpeGVscz48L0ltYWdlPjxJbWFnZSBJRD0iQ29uY2FuYXZhbGluQSI+PFBpeGVscyBEaW1lbnNpb25PcmRlcj0iWFlDWlQiIElEPSJQaXhlbHM6Q29uY2FuYXZhbGluQSIgU2l6ZVQ9IjEiIFNpemVYPSIxIiBTaXplWT0iMSI+PFRpZmZEYXRhIEZpcnN0Qz0iMCIgRmlyc3RUPSIwIiBGaXJzdFo9IjAiIElGRD0iMCIgUGxhbmVDb3VudD0iMSI+PFVVSUQgRmlsZU5hbWU9ImZpbGU6Ly8vQzovVXNlcnMvbXZlbmthdGVzYW43L0RvY3VtZW50cy9QeXRob24lMjBTY3JpcHRzL011bHRpcGxleE9yZ2FuZWxsZXMvZGF0YV9jZWxsX3Byb2ZpbGVyL0JNX2Jnc3ViL2NlbGxfMTUvQk1fMTVfQ29uY2FuYXZhbGluQS50aWYiLz48L1RpZmZEYXRhPjxQbGFuZSBUaGVDPSIwIiBUaGVUPSIwIiBUaGVaPSIwIi8+PC9QaXhlbHM+PC9JbWFnZT48SW1hZ2UgSUQ9IkRBUEkiPjxQaXhlbHMgRGltZW5zaW9uT3JkZXI9IlhZQ1pUIiBJRD0iUGl4ZWxzOkRBUEkiIFNpemVUPSIxIiBTaXplWD0iMSIgU2l6ZVk9IjEiPjxUaWZmRGF0YSBGaXJzdEM9IjAiIEZpcnN0VD0iMCIgRmlyc3RaPSIwIiBJRkQ9IjAiIFBsYW5lQ291bnQ9IjEiPjxVVUlEIEZpbGVOYW1lPSJmaWxlOi8vL0M6L1VzZXJzL212ZW5rYXRlc2FuNy9Eb2N1bWVudHMvUHl0aG9uJTIwU2NyaXB0cy9NdWx0aXBsZXhPcmdhbmVsbGVzL2RhdGFfY2VsbF9wcm9maWxlci9CTV9iZ3N1Yi9jZWxsXzFfREFQSS50aWYiLz48L1RpZmZEYXRhPjxQbGFuZSBUaGVDPSIwIiBUaGVUPSIwIiBUaGVaPSIwIi8+PC9QaXhlbHM+PC9JbWFnZT48SW1hZ2UgSUQ9IkdPTFBINCI+PFBpeGVscyBEaW1lbnNpb25PcmRlcj0iWFlDWlQiIElEPSJQaXhlbHM6R09MUEg0IiBTaXplVD0iMSIgU2l6ZVg9IjEiIFNpemVZPSIxIj48VGlmZkRhdGEgRmlyc3RDPSIwIiBGaXJzdFQ9IjAiIEZpcnN0Wj0iMCIgSUZEPSIwIiBQbGFuZUNvdW50PSIxIj48VVVJRCBGaWxlTmFtZT0iZmlsZTovLy9DOi9Vc2Vycy9tdmVua2F0ZXNhbjcvRG9jdW1lbnRzL1B5dGhvbiUyMFNjcmlwdHMvTXVsdGlwbGV4T3JnYW5lbGxlcy9kYXRhX2NlbGxfcHJvZmlsZXIvQk1fYmdzdWIvY2VsbF8xX0dPTFBINC50aWYiLz48L1RpZmZEYXRhPjxQbGFuZSBUaGVDPSIwIiBUaGVUPSIwIiBUaGVaPSIwIi8+PC9QaXhlbHM+PC9JbWFnZT48SW1hZ2UgSUQ9IkhTUDYwIj48UGl4ZWxzIERpbWVuc2lvbk9yZGVyPSJYWUNaVCIgSUQ9IlBpeGVsczpIU1A2MCIgU2l6ZVQ9IjEiIFNpemVYPSIxIiBTaXplWT0iMSI+PFRpZmZEYXRhIEZpcnN0Qz0iMCIgRmlyc3RUPSIwIiBGaXJzdFo9IjAiIElGRD0iMCIgUGxhbmVDb3VudD0iMSI+PFVVSUQgRmlsZU5hbWU9ImZpbGU6Ly8vQzovVXNlcnMvbXZlbmthdGVzYW43L0RvY3VtZW50cy9QeXRob24lMjBTY3JpcHRzL011bHRpcGxleE9yZ2FuZWxsZXMvZGF0YV9jZWxsX3Byb2ZpbGVyL0JNX2Jnc3ViL2NlbGxfMTUvQk1fMTVfSFNQNjAudGlmIi8+PC9UaWZmRGF0YT48UGxhbmUgVGhlQz0iMCIgVGhlVD0iMCIgVGhlWj0iMCIvPjwvUGl4ZWxzPjwvSW1hZ2U+PEltYWdlIElEPSJOdWNsZW9saW4iPjxQaXhlbHMgRGltZW5zaW9uT3JkZXI9IlhZQ1pUIiBJRD0iUGl4ZWxzOk51Y2xlb2xpbiIgU2l6ZVQ9IjEiIFNpemVYPSIxIiBTaXplWT0iMSI+PFRpZmZEYXRhIEZpcnN0Qz0iMCIgRmlyc3RUPSIwIiBGaXJzdFo9IjAiIElGRD0iMCIgUGxhbmVDb3VudD0iMSI+PFVVSUQgRmlsZU5hbWU9ImZpbGU6Ly8vQzovVXNlcnMvbXZlbmthdGVzYW43L0RvY3VtZW50cy9QeXRob24lMjBTY3JpcHRzL011bHRpcGxleE9yZ2FuZWxsZXMvZGF0YV9jZWxsX3Byb2ZpbGVyL0JNX2Jnc3ViL2NlbGxfMV9OdWNsZW9saW4udGlmIi8+PC9UaWZmRGF0YT48UGxhbmUgVGhlQz0iMCIgVGhlVD0iMCIgVGhlWj0iMCIvPjwvUGl4ZWxzPjwvSW1hZ2U+PEltYWdlIElEPSJQaGFsbG9pZGluIj48UGl4ZWxzIERpbWVuc2lvbk9yZGVyPSJYWUNaVCIgSUQ9IlBpeGVsczpQaGFsbG9pZGluIiBTaXplVD0iMSIgU2l6ZVg9IjEiIFNpemVZPSIxIj48VGlmZkRhdGEgRmlyc3RDPSIwIiBGaXJzdFQ9IjAiIEZpcnN0Wj0iMCIgSUZEPSIwIiBQbGFuZUNvdW50PSIxIj48VVVJRCBGaWxlTmFtZT0iZmlsZTovLy9DOi9Vc2Vycy9tdmVua2F0ZXNhbjcvRG9jdW1lbnRzL1B5dGhvbiUyMFNjcmlwdHMvTXVsdGlwbGV4T3JnYW5lbGxlcy9kYXRhX2NlbGxfcHJvZmlsZXIvQk1fYmdzdWIvY2VsbF8xX1BoYWxsb2lkaW4udGlmIi8+PC9UaWZmRGF0YT48UGxhbmUgVGhlQz0iMCIgVGhlVD0iMCIgVGhlWj0iMCIvPjwvUGl4ZWxzPjwvSW1hZ2U+PEltYWdlIElEPSJTb3J0aWxpbiI+PFBpeGVscyBEaW1lbnNpb25PcmRlcj0iWFlDWlQiIElEPSJQaXhlbHM6U29ydGlsaW4iIFNpemVUPSIxIiBTaXplWD0iMSIgU2l6ZVk9IjEiPjxUaWZmRGF0YSBGaXJzdEM9IjAiIEZpcnN0VD0iMCIgRmlyc3RaPSIwIiBJRkQ9IjAiIFBsYW5lQ291bnQ9IjEiPjxVVUlEIEZpbGVOYW1lPSJmaWxlOi8vL0M6L1VzZXJzL212ZW5rYXRlc2FuNy9Eb2N1bWVudHMvUHl0aG9uJTIwU2NyaXB0cy9NdWx0aXBsZXhPcmdhbmVsbGVzL2RhdGFfY2VsbF9wcm9maWxlci9CTV9iZ3N1Yi9jZWxsXzFfU29ydGlsaW4udGlmIi8+PC9UaWZmRGF0YT48UGxhbmUgVGhlQz0iMCIgVGhlVD0iMCIgVGhlWj0iMCIvPjwvUGl4ZWxzPjwvSW1hZ2U+PEltYWdlIElEPSJUT00yMCI+PFBpeGVscyBEaW1lbnNpb25PcmRlcj0iWFlDWlQiIElEPSJQaXhlbHM6VE9NMjAiIFNpemVUPSIxIiBTaXplWD0iMSIgU2l6ZVk9IjEiPjxUaWZmRGF0YSBGaXJzdEM9IjAiIEZpcnN0VD0iMCIgRmlyc3RaPSIwIiBJRkQ9IjAiIFBsYW5lQ291bnQ9IjEiPjxVVUlEIEZpbGVOYW1lPSJmaWxlOi8vL0M6L1VzZXJzL212ZW5rYXRlc2FuNy9Eb2N1bWVudHMvUHl0aG9uJTIwU2NyaXB0cy9NdWx0aXBsZXhPcmdhbmVsbGVzL2RhdGFfY2VsbF9wcm9maWxlci9CTV9iZ3N1Yi9jZWxsXzFfVE9NMjAudGlmIi8+PC9UaWZmRGF0YT48UGxhbmUgVGhlQz0iMCIgVGhlVD0iMCIgVGhlWj0iMCIvPjwvUGl4ZWxzPjwvSW1hZ2U+PEltYWdlIElEPSJXR0EiPjxQaXhlbHMgRGltZW5zaW9uT3JkZXI9IlhZQ1pUIiBJRD0iUGl4ZWxzOldHQSIgU2l6ZVQ9IjEiIFNpemVYPSIxIiBTaXplWT0iMSI+PFRpZmZEYXRhIEZpcnN0Qz0iMCIgRmlyc3RUPSIwIiBGaXJzdFo9IjAiIElGRD0iMCIgUGxhbmVDb3VudD0iMSI+PFVVSUQgRmlsZU5hbWU9ImZpbGU6Ly8vQzovVXNlcnMvbXZlbmthdGVzYW43L0RvY3VtZW50cy9QeXRob24lMjBTY3JpcHRzL011bHRpcGxleE9yZ2FuZWxsZXMvZGF0YV9jZWxsX3Byb2ZpbGVyL0JNX2Jnc3ViL2NlbGxfMTUvQk1fMUc8P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJVVEYtOCI/PjxPTUUgeG1sbnM9Imh0dHA6Ly93d3cub3Blbm1pY3Jvc2NvcHkub3JnL1NjaGVtYXMvT01FLzIwMTYtMDYiPjxJbWFnZSBJRD0iQVRGNiI+PFBpeGVscyBEaW1lbnNpb25PcmRlcj0iWFlDWlQiIElEPSJQaXhlbHM6QVRGNiIgU2l6ZVQ9IjEiIFNpemVYPSIxIiBTaXplWT0iMSI+PFRpZmZEYXRhIEZpcnN0Qz0iMCIgRmlyc3RUPSIwIiBGaXJzdFo9IjAiIElGRD0iMCIgUGxhbmVDb3VudD0iMSI+PFVVSUQgRmlsZU5hbWU9ImZpbGU6Ly8vQzovVXNlcnMvbXZlbmthdGVzYW43L0RvY3VtZW50cy9QeXRob24lMjBTY3JpcHRzL011bHRpcGxleE9yZ2FuZWxsZXMvZGF0YV9jZWxsX3Byb2ZpbGVyL0JNX2Jnc3ViL2NlbGxfMTkvQk1fMTlfQVRGNi50aWYiLz48L1RpZmZEYXRhPjxQbGFuZSBUaGVDPSIwIiBUaGVUPSIwIiBUaGVaPSIwIi8+PC9QaXhlbHM+PC9JbWFnZT48SW1hZ2UgSUQ9IkJldGFUdWJ1bGluIj48UGl4ZWxzIERpbWVuc2lvbk9yZGVyPSJYWUNaVCIgSUQ9IlBpeGVsczpCZXRhVHVidWxpbiIgU2l6ZVQ9IjEiIFNpemVYPSIxIiBTaXplWT0iMSI+PFRpZmZEYXRhIEZpcnN0Qz0iMCIgRmlyc3RUPSIwIiBGaXJzdFo9IjAiIElGRD0iMCIgUGxhbmVDb3VudD0iMSI+PFVVSUQgRmlsZU5hbWU9ImZpbGU6Ly8vQzovVXNlcnMvbXZlbmthdGVzYW43L0RvY3VtZW50cy9QeXRob24lMjBTY3JpcHRzL011bHRpcGxleE9yZ2FuZWxsZXMvZGF0YV9jZWxsX3Byb2ZpbGVyL0JNX2Jnc3ViL2NlbGxfMTkvQk1fMTlfQmV0YVR1YnVsaW4udGlmIi8+PC9UaWZmRGF0YT48UGxhbmUgVGhlQz0iMCIgVGhlVD0iMCIgVGhlWj0iMCIvPjwvUGl4ZWxzPjwvSW1hZ2U+PEltYWdlIElEPSJDb25jYW5hdmFsaW5BIj48UGl4ZWxzIERpbWVuc2lvbk9yZGVyPSJYWUNaVCIgSUQ9IlBpeGVsczpDb25jYW5hdmFsaW5BIiBTaXplVD0iMSIgU2l6ZVg9IjEiIFNpemVZPSIxIj48VGlmZkRhdGEgRmlyc3RDPSIwIiBGaXJzdFQ9IjAiIEZpcnN0Wj0iMCIgSUZEPSIwIiBQbGFuZUNvdW50PSIxIj48VVVJRCBGaWxlTmFtZT0iZmlsZTovLy9DOi9Vc2Vycy9tdmVua2F0ZXNhbjcvRG9jdW1lbnRzL1B5dGhvbiUyMFNjcmlwdHMvTXVsdGlwbGV4T3JnYW5lbGxlcy9kYXRhX2NlbGxfcHJvZmlsZXIvQk1fYmdzdWIvY2VsbF8xOS9CTV8xOV9Db25jYW5hdmFsaW5BLnRpZiIvPjwvVGlmZkRhdGE+PFBsYW5lIFRoZUM9IjAiIFRoZVQ9IjAiIFRoZVo9IjAiLz48L1BpeGVscz48L0ltYWdlPjxJbWFnZSBJRD0iREFQSSI+PFBpeGVscyBEaW1lbnNpb25PcmRlcj0iWFlDWlQiIElEPSJQaXhlbHM6REFQSSIgU2l6ZVQ9IjEiIFNpemVYPSIxIiBTaXplWT0iMSI+PFRpZmZEYXRhIEZpcnN0Qz0iMCIgRmlyc3RUPSIwIiBGaXJzdFo9IjAiIElGRD0iMCIgUGxhbmVDb3VudD0iMSI+PFVVSUQgRmlsZU5hbWU9ImZpbGU6Ly8vQzovVXNlcnMvbXZlbmthdGVzYW43L0RvY3VtZW50cy9QeXRob24lMjBTY3JpcHRzL011bHRpcGxleE9yZ2FuZWxsZXMvZGF0YV9jZWxsX3Byb2ZpbGVyL0JNX2Jnc3ViL2NlbGxfOV9EQVBJLnRpZiIvPjwvVGlmZkRhdGE+PFBsYW5lIFRoZUM9IjAiIFRoZVQ9IjAiIFRoZVo9IjAiLz48L1BpeGVscz48L0ltYWdlPjxJbWFnZSBJRD0iR09MUEg0Ij48UGl4ZWxzIERpbWVuc2lvbk9yZGVyPSJYWUNaVCIgSUQ9IlBpeGVsczpHT0xQSDQiIFNpemVUPSIxIiBTaXplWD0iMSIgU2l6ZVk9IjEiPjxUaWZmRGF0YSBGaXJzdEM9IjAiIEZpcnN0VD0iMCIgRmlyc3RaPSIwIiBJRkQ9IjAiIFBsYW5lQ291bnQ9IjEiPjxVVUlEIEZpbGVOYW1lPSJmaWxlOi8vL0M6L1VzZXJzL212ZW5rYXRlc2FuNy9Eb2N1bWVudHMvUHl0aG9uJTIwU2NyaXB0cy9NdWx0aXBsZXhPcmdhbmVsbGVzL2RhdGFfY2VsbF9wcm9maWxlci9CTV9iZ3N1Yi9jZWxsXzlfR09MUEg0LnRpZiIvPjwvVGlmZkRhdGE+PFBsYW5lIFRoZUM9IjAiIFRoZVQ9IjAiIFRoZVo9IjAiLz48L1BpeGVscz48L0ltYWdlPjxJbWFnZSBJRD0iSFNQNjAiPjxQaXhlbHMgRGltZW5zaW9uT3JkZXI9IlhZQ1pUIiBJRD0iUGl4ZWxzOkhTUDYwIiBTaXplVD0iMSIgU2l6ZVg9IjEiIFNpemVZPSIxIj48VGlmZkRhdGEgRmlyc3RDPSIwIiBGaXJzdFQ9IjAiIEZpcnN0Wj0iMCIgSUZEPSIwIiBQbGFuZUNvdW50PSIxIj48VVVJRCBGaWxlTmFtZT0iZmlsZTovLy9DOi9Vc2Vycy9tdmVua2F0ZXNhbjcvRG9jdW1lbnRzL1B5dGhvbiUyMFNjcmlwdHMvTXVsdGlwbGV4T3JnYW5lbGxlcy9kYXRhX2NlbGxfcHJvZmlsZXIvQk1fYmdzdWIvY2VsbF8xOS9CTV8xOV9IU1A2MC50aWYiLz48L1RpZmZEYXRhPjxQbGFuZSBUaGVDPSIwIiBUaGVUPSIwIiBUaGVaPSIwIi8+PC9QaXhlbHM+PC9JbWFnZT48SW1hZ2UgSUQ9Ik51Y2xlb2xpbiI+PFBpeGVscyBEaW1lbnNpb25PcmRlcj0iWFlDWlQiIElEPSJQaXhlbHM6TnVjbGVvbGluIiBTaXplVD0iMSIgU2l6ZVg9IjEiIFNpemVZPSIxIj48VGlmZkRhdGEgRmlyc3RDPSIwIiBGaXJzdFQ9IjAiIEZpcnN0Wj0iMCIgSUZEPSIwIiBQbGFuZUNvdW50PSIxIj48VVVJRCBGaWxlTmFtZT0iZmlsZTovLy9DOi9Vc2Vycy9tdmVua2F0ZXNhbjcvRG9jdW1lbnRzL1B5dGhvbiUyMFNjcmlwdHMvTXVsdGlwbGV4T3JnYW5lbGxlcy9kYXRhX2NlbGxfcHJvZmlsZXIvQk1fYmdzdWIvY2VsbF85X051Y2xlb2xpbi50aWYiLz48L1RpZmZEYXRhPjxQbGFuZSBUaGVDPSIwIiBUaGVUPSIwIiBUaGVaPSIwIi8+PC9QaXhlbHM+PC9JbWFnZT48SW1hZ2UgSUQ9IlBoYWxsb2lkaW4iPjxQaXhlbHMgRGltZW5zaW9uT3JkZXI9IlhZQ1pUIiBJRD0iUGl4ZWxzOlBoYWxsb2lkaW4iIFNpemVUPSIxIiBTaXplWD0iMSIgU2l6ZVk9IjEiPjxUaWZmRGF0YSBGaXJzdEM9IjAiIEZpcnN0VD0iMCIgRmlyc3RaPSIwIiBJRkQ9IjAiIFBsYW5lQ291bnQ9IjEiPjxVVUlEIEZpbGVOYW1lPSJmaWxlOi8vL0M6L1VzZXJzL212ZW5rYXRlc2FuNy9Eb2N1bWVudHMvUHl0aG9uJTIwU2NyaXB0cy9NdWx0aXBsZXhPcmdhbmVsbGVzL2RhdGFfY2VsbF9wcm9maWxlci9CTV9iZ3N1Yi9jZWxsXzlfUGhhbGxvaWRpbi50aWYiLz48L1RpZmZEYXRhPjxQbGFuZSBUaGVDPSIwIiBUaGVUPSIwIiBUaGVaPSIwIi8+PC9QaXhlbHM+PC9JbWFnZT48SW1hZ2UgSUQ9IlNvcnRpbGluIj48UGl4ZWxzIERpbWVuc2lvbk9yZGVyPSJYWUNaVCIgSUQ9IlBpeGVsczpTb3J0aWxpbiIgU2l6ZVQ9IjEiIFNpemVYPSIxIiBTaXplWT0iMSI+PFRpZmZEYXRhIEZpcnN0Qz0iMCIgRmlyc3RUPSIwIiBGaXJzdFo9IjAiIElGRD0iMCIgUGxhbmVDb3VudD0iMSI+PFVVSUQgRmlsZU5hbWU9ImZpbGU6Ly8vQzovVXNlcnMvbXZlbmthdGVzYW43L0RvY3VtZW50cy9QeXRob24lMjBTY3JpcHRzL011bHRpcGxleE9yZ2FuZWxsZXMvZGF0YV9jZWxsX3Byb2ZpbGVyL0JNX2Jnc3ViL2NlbGxfOV9Tb3J0aWxpbi50aWYiLz48L1RpZmZEYXRhPjxQbGFuZSBUaGVDPSIwIiBUaGVUPSIwIiBUaGVaPSIwIi8+PC9QaXhlbHM+PC9JbWFnZT48SW1hZ2UgSUQ9IlRPTTIwIj48UGl4ZWxzIERpbWVuc2lvbk9yZGVyPSJYWUNaVCIgSUQ9IlBpeGVsczpUT00yMCIgU2l6ZVQ9IjEiIFNpemVYPSIxIiBTaXplWT0iMSI+PFRpZmZEYXRhIEZpcnN0Qz0iMCIgRmlyc3RUPSIwIiBGaXJzdFo9IjAiIElGRD0iMCIgUGxhbmVDb3VudD0iMSI+PFVVSUQgRmlsZU5hbWU9ImZpbGU6Ly8vQzovVXNlcnMvbXZlbmthdGVzYW43L0RvY3VtZW50cy9QeXRob24lMjBTY3JpcHRzL011bHRpcGxleE9yZ2FuZWxsZXMvZGF0YV9jZWxsX3Byb2ZpbGVyL0JNX2Jnc3ViL2NlbGxfOV9UT00yMC50aWYiLz48L1RpZmZEYXRhPjxQbGFuZSBUaGVDPSIwIiBUaGVUPSIwIiBUaGVaPSIwIi8+PC9QaXhlbHM+PC9JbWFnZT48SW1hZ2UgSUQ9IldHQSI+PFBpeGVscyBEaW1lbnNpb25PcmRlcj0iWFlDWlQiIElEPSJQaXhlbHM6V0dBIiBTaXplVD0iMSIgU2l6ZVg9IjEiIFNpemVZPSIxIj48VGlmZkRhdGEgRmlyc3RDPSIwIiBGaXJzdFQ9IjAiIEZpcnN0Wj0iMCIgSUZEPSIwIiBQbGFuZUNvdW50PSIxIj48VVVJRCBGaWxlTmFtZT0iZmlsZTovLy9DOi9Vc2Vycy9tdmVua2F0ZXNhbjcvRG9jdW1lbnRzL1B5dGhvbiUyMFNjcmlwdHMvTXVsdGlwbGV4T3JnYW5lbGxlcy9kYXRhX2NlbGxfcHJvZmlsZXIvQk1fYmdzdWIvY2VsbF8xOS9CTV88P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJVVEYtOCI/PjxPTUUgeG1sbnM9Imh0dHA6Ly93d3cub3Blbm1pY3Jvc2NvcHkub3JnL1NjaGVtYXMvT01FLzIwMTYtMDYiPjxJbWFnZSBJRD0iQVRGNiI+PFBpeGVscyBEaW1lbnNpb25PcmRlcj0iWFlDWlQiIElEPSJQaXhlbHM6QVRGNiIgU2l6ZVQ9IjEiIFNpemVYPSIxIiBTaXplWT0iMSI+PFRpZmZEYXRhIEZpcnN0Qz0iMCIgRmlyc3RUPSIwIiBGaXJzdFo9IjAiIElGRD0iMCIgUGxhbmVDb3VudD0iMSI+PFVVSUQgRmlsZU5hbWU9ImZpbGU6Ly8vQzovVXNlcnMvbXZlbmthdGVzYW43L0RvY3VtZW50cy9QeXRob24lMjBTY3JpcHRzL011bHRpcGxleE9yZ2FuZWxsZXMvZGF0YV9jZWxsX3Byb2ZpbGVyL0JNX2Jnc3ViL2NlbGxfMy9CTV8zX0FURjYudGlmIi8+PC9UaWZmRGF0YT48UGxhbmUgVGhlQz0iMCIgVGhlVD0iMCIgVGhlWj0iMCIvPjwvUGl4ZWxzPjwvSW1hZ2U+PEltYWdlIElEPSJCZXRhVHVidWxpbiI+PFBpeGVscyBEaW1lbnNpb25PcmRlcj0iWFlDWlQiIElEPSJQaXhlbHM6QmV0YVR1YnVsaW4iIFNpemVUPSIxIiBTaXplWD0iMSIgU2l6ZVk9IjEiPjxUaWZmRGF0YSBGaXJzdEM9IjAiIEZpcnN0VD0iMCIgRmlyc3RaPSIwIiBJRkQ9IjAiIFBsYW5lQ291bnQ9IjEiPjxVVUlEIEZpbGVOYW1lPSJmaWxlOi8vL0M6L1VzZXJzL212ZW5rYXRlc2FuNy9Eb2N1bWVudHMvUHl0aG9uJTIwU2NyaXB0cy9NdWx0aXBsZXhPcmdhbmVsbGVzL2RhdGFfY2VsbF9wcm9maWxlci9CTV9iZ3N1Yi9jZWxsXzMvQk1fM19CZXRhVHVidWxpbi50aWYiLz48L1RpZmZEYXRhPjxQbGFuZSBUaGVDPSIwIiBUaGVUPSIwIiBUaGVaPSIwIi8+PC9QaXhlbHM+PC9JbWFnZT48SW1hZ2UgSUQ9IkNvbmNhbmF2YWxpbkEiPjxQaXhlbHMgRGltZW5zaW9uT3JkZXI9IlhZQ1pUIiBJRD0iUGl4ZWxzOkNvbmNhbmF2YWxpbkEiIFNpemVUPSIxIiBTaXplWD0iMSIgU2l6ZVk9IjEiPjxUaWZmRGF0YSBGaXJzdEM9IjAiIEZpcnN0VD0iMCIgRmlyc3RaPSIwIiBJRkQ9IjAiIFBsYW5lQ291bnQ9IjEiPjxVVUlEIEZpbGVOYW1lPSJmaWxlOi8vL0M6L1VzZXJzL212ZW5rYXRlc2FuNy9Eb2N1bWVudHMvUHl0aG9uJTIwU2NyaXB0cy9NdWx0aXBsZXhPcmdhbmVsbGVzL2RhdGFfY2VsbF9wcm9maWxlci9CTV9iZ3N1Yi9jZWxsXzMvQk1fM19Db25jYW5hdmFsaW5BLnRpZiIvPjwvVGlmZkRhdGE+PFBsYW5lIFRoZUM9IjAiIFRoZVQ9IjAiIFRoZVo9IjAiLz48L1BpeGVscz48L0ltYWdlPjxJbWFnZSBJRD0iREFQSSI+PFBpeGVscyBEaW1lbnNpb25PcmRlcj0iWFlDWlQiIElEPSJQaXhlbHM6REFQSSIgU2l6ZVQ9IjEiIFNpemVYPSIxIiBTaXplWT0iMSI+PFRpZmZEYXRhIEZpcnN0Qz0iMCIgRmlyc3RUPSIwIiBGaXJzdFo9IjAiIElGRD0iMCIgUGxhbmVDb3VudD0iMSI+PFVVSUQgRmlsZU5hbWU9ImZpbGU6Ly8vQzovVXNlcnMvbXZlbmthdGVzYW43L0RvY3VtZW50cy9QeXRob24lMjBTY3JpcHRzL011bHRpcGxleE9yZ2FuZWxsZXMvZGF0YV9jZWxsX3Byb2ZpbGVyL0JNX2Jnc3ViL2NlbGxfM19EQVBJLnRpZiIvPjwvVGlmZkRhdGE+PFBsYW5lIFRoZUM9IjAiIFRoZVQ9IjAiIFRoZVo9IjAiLz48L1BpeGVscz48L0ltYWdlPjxJbWFnZSBJRD0iR09MUEg0Ij48UGl4ZWxzIERpbWVuc2lvbk9yZGVyPSJYWUNaVCIgSUQ9IlBpeGVsczpHT0xQSDQiIFNpemVUPSIxIiBTaXplWD0iMSIgU2l6ZVk9IjEiPjxUaWZmRGF0YSBGaXJzdEM9IjAiIEZpcnN0VD0iMCIgRmlyc3RaPSIwIiBJRkQ9IjAiIFBsYW5lQ291bnQ9IjEiPjxVVUlEIEZpbGVOYW1lPSJmaWxlOi8vL0M6L1VzZXJzL212ZW5rYXRlc2FuNy9Eb2N1bWVudHMvUHl0aG9uJTIwU2NyaXB0cy9NdWx0aXBsZXhPcmdhbmVsbGVzL2RhdGFfY2VsbF9wcm9maWxlci9CTV9iZ3N1Yi9jZWxsXzNfR09MUEg0LnRpZiIvPjwvVGlmZkRhdGE+PFBsYW5lIFRoZUM9IjAiIFRoZVQ9IjAiIFRoZVo9IjAiLz48L1BpeGVscz48L0ltYWdlPjxJbWFnZSBJRD0iSFNQNjAiPjxQaXhlbHMgRGltZW5zaW9uT3JkZXI9IlhZQ1pUIiBJRD0iUGl4ZWxzOkhTUDYwIiBTaXplVD0iMSIgU2l6ZVg9IjEiIFNpemVZPSIxIj48VGlmZkRhdGEgRmlyc3RDPSIwIiBGaXJzdFQ9IjAiIEZpcnN0Wj0iMCIgSUZEPSIwIiBQbGFuZUNvdW50PSIxIj48VVVJRCBGaWxlTmFtZT0iZmlsZTovLy9DOi9Vc2Vycy9tdmVua2F0ZXNhbjcvRG9jdW1lbnRzL1B5dGhvbiUyMFNjcmlwdHMvTXVsdGlwbGV4T3JnYW5lbGxlcy9kYXRhX2NlbGxfcHJvZmlsZXIvQk1fYmdzdWIvY2VsbF8zL0JNXzNfSFNQNjAudGlmIi8+PC9UaWZmRGF0YT48UGxhbmUgVGhlQz0iMCIgVGhlVD0iMCIgVGhlWj0iMCIvPjwvUGl4ZWxzPjwvSW1hZ2U+PEltYWdlIElEPSJOdWNsZW9saW4iPjxQaXhlbHMgRGltZW5zaW9uT3JkZXI9IlhZQ1pUIiBJRD0iUGl4ZWxzOk51Y2xlb2xpbiIgU2l6ZVQ9IjEiIFNpemVYPSIxIiBTaXplWT0iMSI+PFRpZmZEYXRhIEZpcnN0Qz0iMCIgRmlyc3RUPSIwIiBGaXJzdFo9IjAiIElGRD0iMCIgUGxhbmVDb3VudD0iMSI+PFVVSUQgRmlsZU5hbWU9ImZpbGU6Ly8vQzovVXNlcnMvbXZlbmthdGVzYW43L0RvY3VtZW50cy9QeXRob24lMjBTY3JpcHRzL011bHRpcGxleE9yZ2FuZWxsZXMvZGF0YV9jZWxsX3Byb2ZpbGVyL0JNX2Jnc3ViL2NlbGxfM19OdWNsZW9saW4udGlmIi8+PC9UaWZmRGF0YT48UGxhbmUgVGhlQz0iMCIgVGhlVD0iMCIgVGhlWj0iMCIvPjwvUGl4ZWxzPjwvSW1hZ2U+PEltYWdlIElEPSJQaGFsbG9pZGluIj48UGl4ZWxzIERpbWVuc2lvbk9yZGVyPSJYWUNaVCIgSUQ9IlBpeGVsczpQaGFsbG9pZGluIiBTaXplVD0iMSIgU2l6ZVg9IjEiIFNpemVZPSIxIj48VGlmZkRhdGEgRmlyc3RDPSIwIiBGaXJzdFQ9IjAiIEZpcnN0Wj0iMCIgSUZEPSIwIiBQbGFuZUNvdW50PSIxIj48VVVJRCBGaWxlTmFtZT0iZmlsZTovLy9DOi9Vc2Vycy9tdmVua2F0ZXNhbjcvRG9jdW1lbnRzL1B5dGhvbiUyMFNjcmlwdHMvTXVsdGlwbGV4T3JnYW5lbGxlcy9kYXRhX2NlbGxfcHJvZmlsZXIvQk1fYmdzdWIvY2VsbF8zX1BoYWxsb2lkaW4udGlmIi8+PC9UaWZmRGF0YT48UGxhbmUgVGhlQz0iMCIgVGhlVD0iMCIgVGhlWj0iMCIvPjwvUGl4ZWxzPjwvSW1hZ2U+PEltYWdlIElEPSJTb3J0aWxpbiI+PFBpeGVscyBEaW1lbnNpb25PcmRlcj0iWFlDWlQiIElEPSJQaXhlbHM6U29ydGlsaW4iIFNpemVUPSIxIiBTaXplWD0iMSIgU2l6ZVk9IjEiPjxUaWZmRGF0YSBGaXJzdEM9IjAiIEZpcnN0VD0iMCIgRmlyc3RaPSIwIiBJRkQ9IjAiIFBsYW5lQ291bnQ9IjEiPjxVVUlEIEZpbGVOYW1lPSJmaWxlOi8vL0M6L1VzZXJzL212ZW5rYXRlc2FuNy9Eb2N1bWVudHMvUHl0aG9uJTIwU2NyaXB0cy9NdWx0aXBsZXhPcmdhbmVsbGVzL2RhdGFfY2VsbF9wcm9maWxlci9CTV9iZ3N1Yi9jZWxsXzNfU29ydGlsaW4udGlmIi8+PC9UaWZmRGF0YT48UGxhbmUgVGhlQz0iMCIgVGhlVD0iMCIgVGhlWj0iMCIvPjwvUGl4ZWxzPjwvSW1hZ2U+PEltYWdlIElEPSJUT00yMCI+PFBpeGVscyBEaW1lbnNpb25PcmRlcj0iWFlDWlQiIElEPSJQaXhlbHM6VE9NMjAiIFNpemVUPSIxIiBTaXplWD0iMSIgU2l6ZVk9IjEiPjxUaWZmRGF0YSBGaXJzdEM9IjAiIEZpcnN0VD0iMCIgRmlyc3RaPSIwIiBJRkQ9IjAiIFBsYW5lQ291bnQ9IjEiPjxVVUlEIEZpbGVOYW1lPSJmaWxlOi8vL0M6L1VzZXJzL212ZW5rYXRlc2FuNy9Eb2N1bWVudHMvUHl0aG9uJTIwU2NyaXB0cy9NdWx0aXBsZXhPcmdhbmVsbGVzL2RhdGFfY2VsbF9wcm9maWxlci9CTV9iZ3N1Yi9jZWxsXzNfVE9NMjAudGlmIi8+PC9UaWZmRGF0YT48UGxhbmUgVGhlQz0iMCIgVGhlVD0iMCIgVGhlWj0iMCIvPjwvUGl4ZWxzPjwvSW1hZ2U+PEltYWdlIElEPSJXR0EiPjxQaXhlbHMgRGltZW5zaW9uT3JkZXI9IlhZQ1pUIiBJRD0iUGl4ZWxzOldHQSIgU2l6ZVQ9IjEiIFNpemVYPSIxIiBTaXplWT0iMSI+PFRpZmZEYXRhIEZpcnN0Qz0iMCIgRmlyc3RUPSIwIiBGaXJzdFo9IjAiIElGRD0iMCIgUGxhbmVDb3VudD0iMSI+PFVVSUQgRmlsZU5hbWU9ImZpbGU6Ly8vQzovVXNlcnMvbXZlbmthdGVzYW43L0RvY3VtZW50cy9QeXRob24lMjBTY3JpcHRzL011bHRpcGxleE9yZ2FuZWxsZXMvZGF0YV9jZWxsX3Byb2ZpbGVyL0JNX2Jnc3ViL2NlbGxfMyIgU2l6ZVQ9IjEiIFNpemVYPSIxIiBTaXplWT0iMSI+PFRpZmZEYXRhIEZpcnN0Qz0iMCIgRmlyc3RUPSIwIiBGaXJzdFo9IjAiIElGRD0iMCIgUGxhbmVDb3VudD0iMSI+PFVVSUQgRmlsZU5hbWU9ImZpbGU6Ly8vQzovVXNlcnMvbXZlbmthdGVzYW43L0RvY3VtZW50cy9QeXRob24lMjBTY3JpcHRzL011bHRpcGxleE9yZ2FuZWxsZXMvZGF0YV9jZWxsX3Byb2ZpbGVyL0JNX2Jnc3ViL2NlbGxfMzAvQk1fMzBfbGluIiBTaXplVD0iMSIgU2l6ZVg9IjEiIFNpemVZPSIxIj48VGlmZkRhdGEgRmlyc3RDPSIwIiBGaXJzdFQ9IjAiIEZpcnN0Wj0iMCIgSUZEPSIwIiBQbGFuZUNvdW50PSIxIj48VVVJRCBGaWxlTmFtZT0iZmlsZTovLy9DOi9Vc2Vycy9tdmVua2F0ZXNhbjcvRG9jdW1lbnRzL1B5dGhvbiUyMFNjcmlwdHMvTXVsdGlwbGV4T3JnYW5lbGxlcy9kYXRhX2NlbGxfcHJvZmlsZXIvQk1fYmdzdWIvY2VsbF8zMC9CTV8zMF9BIiBTaXplVD0iMSIgU2l6ZVg9IjEiIFNpemVZPSIxIj48VGlmZkRhdGEgRmlyc3RDPSIwIiBGaXJzdFQ9IjAiIEZpcnN0Wj0iMCIgSUZEPSIwIiBQbGFuZUNvdW50PSIxIj48VVVJRCBGaWxlTmFtZT0iZmlsZTovLy9DOi9Vc2Vycy9tdmVua2F0ZXNhbjcvRG9jdW1lbnRzL1B5dGhvbiUyMFNjcmlwdHMvTXVsdGlwbGV4T3JnYW5lbGxlcy9kYXRhX2NlbGxfcHJvZmlsZXIvQk1fYmdzdWIvY2VsbF8zMC9CTV8zMF8wIiBTaXplVD0iMSIgU2l6ZVg9IjEiIFNpemVZPSIxIj48VGlmZkRhdGEgRmlyc3RDPSIwIiBGaXJzdFQ9IjAiIEZpcnN0Wj0iMCIgSUZEPSIwIiBQbGFuZUNvdW50PSIxIj48VVVJRCBGaWxlTmFtZT0iZmlsZTovLy9DOi9Vc2Vycy9tdmVua2F0ZXNhbjcvRG9jdW1lbnRzL1B5dGhvbiUyMFNjcmlwdHMvTXVsdGlwbGV4T3JnYW5lbGxlcy9kYXRhX2NlbGxfcHJvZmlsZXIvQk1fYmdzdWIvY2VsbF8zMC9CTV8zMF9fMzAvQk1fMyIgU2l6ZVQ9IjEiIFNpemVYPSIxIiBTaXplWT0iMSI+PFRpZmZEYXRhIEZpcnN0Qz0iMCIgRmlyc3RUPSIwIiBGaXJzdFo9IjAiIElGRD0iMCIgUGxhbmVDb3VudD0iMSI+PFVVSUQgRmlsZU5hbWU9ImZpbGU6Ly8vQzovVXNlcnMvbXZlbmthdGVzYW43L0RvY3VtZW50cy9QeXRob24lMjBTY3JpcHRzL011bHRpcGxleE9yZ2FuZWxsZXMvZGF0YV9jZWxsX3Byb2ZpbGVyL0JNX2Jnc3ViL2NlbGxfMzEvQk1fMzFfbGluIiBTaXplVD0iMSIgU2l6ZVg9IjEiIFNpemVZPSIxIj48VGlmZkRhdGEgRmlyc3RDPSIwIiBGaXJzdFQ9IjAiIEZpcnN0Wj0iMCIgSUZEPSIwIiBQbGFuZUNvdW50PSIxIj48VVVJRCBGaWxlTmFtZT0iZmlsZTovLy9DOi9Vc2Vycy9tdmVua2F0ZXNhbjcvRG9jdW1lbnRzL1B5dGhvbiUyMFNjcmlwdHMvTXVsdGlwbGV4T3JnYW5lbGxlcy9kYXRhX2NlbGxfcHJvZmlsZXIvQk1fYmdzdWIvY2VsbF8zMS9CTV8zMV9BIiBTaXplVD0iMSIgU2l6ZVg9IjEiIFNpemVZPSIxIj48VGlmZkRhdGEgRmlyc3RDPSIwIiBGaXJzdFQ9IjAiIEZpcnN0Wj0iMCIgSUZEPSIwIiBQbGFuZUNvdW50PSIxIj48VVVJRCBGaWxlTmFtZT0iZmlsZTovLy9DOi9Vc2Vycy9tdmVua2F0ZXNhbjcvRG9jdW1lbnRzL1B5dGhvbiUyMFNjcmlwdHMvTXVsdGlwbGV4T3JnYW5lbGxlcy9kYXRhX2NlbGxfcHJvZmlsZXIvQk1fYmdzdWIvY2VsbF8zMS9CTV8zMV8wIiBTaXplVD0iMSIgU2l6ZVg9IjEiIFNpemVZPSIxIj48VGlmZkRhdGEgRmlyc3RDPSIwIiBGaXJzdFQ9IjAiIEZpcnN0Wj0iMCIgSUZEPSIwIiBQbGFuZUNvdW50PSIxIj48VVVJRCBGaWxlTmFtZT0iZmlsZTovLy9DOi9Vc2Vycy9tdmVua2F0ZXNhbjcvRG9jdW1lbnRzL1B5dGhvbiUyMFNjcmlwdHMvTXVsdGlwbGV4T3JnYW5lbGxlcy9kYXRhX2NlbGxfcHJvZmlsZXIvQk1fYmdzdWIvY2VsbF8zMS9CTV8zMV9fMzEiIFNpemVUPSIxIiBTaXplWD0iMSIgU2l6ZVk9IjEiPjxUaWZmRGF0YSBGaXJzdEM9IjAiIEZpcnN0VD0iMCIgRmlyc3RaPSIwIiBJRkQ9IjAiIFBsYW5lQ291bnQ9IjEiPjxVVUlEIEZpbGVOYW1lPSJmaWxlOi8vL0M6L1VzZXJzL212ZW5rYXRlc2FuNy9Eb2N1bWVudHMvUHl0aG9uJTIwU2NyaXB0cy9NdWx0aXBsZXhPcmdhbmVsbGVzL2RhdGFfY2VsbF9wcm9maWxlci9CTV9iZ3N1Yi9jZWxsXzQvQk1fNF9saW4iIFNpemVUPSIxIiBTaXplWD0iMSIgU2l6ZVk9IjEiPjxUaWZmRGF0YSBGaXJzdEM9IjAiIEZpcnN0VD0iMCIgRmlyc3RaPSIwIiBJRkQ9IjAiIFBsYW5lQ291bnQ9IjEiPjxVVUlEIEZpbGVOYW1lPSJmaWxlOi8vL0M6L1VzZXJzL212ZW5rYXRlc2FuNy9Eb2N1bWVudHMvUHl0aG9uJTIwU2NyaXB0cy9NdWx0aXBsZXhPcmdhbmVsbGVzL2RhdGFfY2VsbF9wcm9maWxlci9CTV9iZ3N1Yi9jZWxsXzQvQk1fNF9BIiBTaXplVD0iMSIgU2l6ZVg9IjEiIFNpemVZPSIxIj48VGlmZkRhdGEgRmlyc3RDPSIwIiBGaXJzdFQ9IjAiIEZpcnN0Wj0iMCIgSUZEPSIwIiBQbGFuZUNvdW50PSIxIj48VVVJRCBGaWxlTmFtZT0iZmlsZTovLy9DOi9Vc2Vycy9tdmVua2F0ZXNhbjcvRG9jdW1lbnRzL1B5dGhvbiUyMFNjcmlwdHMvTXVsdGlwbGV4T3JnYW5lbGxlcy9kYXRhX2NlbGxfcHJvZmlsZXIvQk1fYmdzdWIvY2VsbF80L0JNXzRfMCIgU2l6ZVQ9IjEiIFNpemVYPSIxIiBTaXplWT0iMSI+PFRpZmZEYXRhIEZpcnN0Qz0iMCIgRmlyc3RUPSIwIiBGaXJzdFo9IjAiIElGRD0iMCIgUGxhbmVDb3VudD0iMSI+PFVVSUQgRmlsZU5hbWU9ImZpbGU6Ly8vQzovVXNlcnMvbXZlbmthdGVzYW43L0RvY3VtZW50cy9QeXRob24lMjBTY3JpcHRzL011bHRpcGxleE9yZ2FuZWxsZXMvZGF0YV9jZWxsX3Byb2ZpbGVyL0JNX2Jnc3ViL2NlbGxfNC9CTV80X180eG1sc2lvbi4wImVuY29URj9PTUVuc3A6L3d3Lm9waXlvcmdTY20vT01FLTYiPjxJbWFnZSBJRD0iQVRGNiI+PFBpeGVscyBEaW1lbnNpb25PcmRlcj0iWFlDWlQiIElEPSJQaXhlbHM6QVRGNiIgU2l6ZVQ9IjEiIFNpemVYPSIxIiBTaXplWT0iMSI+PFRpZmZEYXRhIEZpcnN0Qz0iMCIgRmlyc3RUPSIwIiBGaXJzdFo9IjAiIElGRD0iMCIgUGxhbmVDb3VudD0iMSI+PFVVSUQgRmlsZU5hbWU9ImZpbGU6Ly8vQzovVXNlcnMvbXZlbmthdGVzYW43L0RvY3VtZW50cy9QeXRob24lMjBTY3JpcHRzL011bHRpcGxleE9yZ2FuZWxsZXMvZGF0YV9jZWxsX3Byb2ZpbGVyL0JNX2Jnc3ViL2NlbGxfOS9CTV85Xy50aWYiLz48L1RpZmZEYXRhPjxQbGFuZSBUaGVDPSIwIiBUaGVUPSIwIiBUaGVaPSIwIi8+PC9QaXhlbHM+PC9JbWFnZT48SW1hZ2UgSUQ9IkJldGFUdWJ1bGluIj48UGl4ZWxzIERpbWVuc2lvbk9yZGVyPSJYWUNaVCIgSUQ9IlBpeGVsczpCZXRhVHVidWxpbiIgU2l6ZVQ9IjEiIFNpemVYPSIxIiBTaXplWT0iMSI+PFRpZmZEYXRhIEZpcnN0Qz0iMCIgRmlyc3RUPSIwIiBGaXJzdFo9IjAiIElGRD0iMCIgUGxhbmVDb3VudD0iMSI+PFVVSUQgRmlsZU5hbWU9ImZpbGU6Ly8vQzovVXNlcnMvbXZlbmthdGVzYW43L0RvY3VtZW50cy9QeXRob24lMjBTY3JpcHRzL011bHRpcGxleE9yZ2FuZWxsZXMvZGF0YV9jZWxsX3Byb2ZpbGVyL0JNX2Jnc3ViL2NlbGxfOS9CTV85X3V1bGluLnRpZiIvPjwvVGlmZkRhdGE+PFBsYW5lIFRoZUM9IjAiIFRoZVQ9IjAiIFRoZVo9IjAiLz48L1BpeGVscz48L0ltYWdlPjxJbWFnZSBJRD0iQ29uY2FuYXZhbGluQSI+PFBpeGVscyBEaW1lbnNpb25PcmRlcj0iWFlDWlQiIElEPSJQaXhlbHM6Q29uY2FuYXZhbGluQSIgU2l6ZVQ9IjEiIFNpemVYPSIxIiBTaXplWT0iMSI+PFRpZmZEYXRhIEZpcnN0Qz0iMCIgRmlyc3RUPSIwIiBGaXJzdFo9IjAiIElGRD0iMCIgUGxhbmVDb3VudD0iMSI+PFVVSUQgRmlsZU5hbWU9ImZpbGU6Ly8vQzovVXNlcnMvbXZlbmthdGVzYW43L0RvY3VtZW50cy9QeXRob24lMjBTY3JpcHRzL011bHRpcGxleE9yZ2FuZWxsZXMvZGF0YV9jZWxsX3Byb2ZpbGVyL0JNX2Jnc3ViL2NlbGxfOS9CTV85X0NvbmN2YWxEQVBJREFQSSJHT0xQSDRHT0xQSDQiT0hIU1A2MCI+PFBpeGVscyBEaW1lbnNpb25PcmRlcj0iWFlDWlQiIElEPSJQaXhlbHM6SFNQNjAiIFNpemVUPSIxIiBTaXplWD0iMSIgU2l6ZVk9IjEiPjxUaWZmRGF0YSBGaXJzdEM9IjAiIEZpcnN0VD0iMCIgRmlyc3RaPSIwIiBJRkQ9IjAiIFBsYW5lQ291bnQ9IjEiPjxVVUlEIEZpbGVOYW1lPSJmaWxlOi8vL0M6L1VzZXJzL212ZW5rYXRlc2FuNy9Eb2N1bWVudHMvUHl0aG9uJTIwU2NyaXB0cy9NdWx0aXBsZXhPcmdhbmVsbGVzL2RhdGFfY2VsbF9wcm9maWxlci9CTV9iZ3N1Yi9jZWxsXzkvQk1fOV9TUDAudGlmIi8+PC9UaWZmRGF0YT48UGxhbmUgVGhlQz0iMCIgVGhlVD0iMCIgVGhlWj0iMCIvPjwvUGl4ZWxzPjwvSW1hZ2U+PEltYWdlIElEPSJOdWNsZW9saW5OdWNsZW9saW4iIElEPSJQaGFsbG9pZGluUGhhbGxvaWRpbiJoU29ydGlsaW5Tb3J0aWxpbiJUT00yMFRPTTIwIk9NdGlmPjxQbGFuZSBUaGVDPSIwIiBUaGVUPSIwIlo9IiIvPjwvUD48L21hSW1hZ2UgSVdHQT48UGl4ZWxzIG1lbk9yVCIgSVdHQSIgU2l6ZT0iMSIgU2l6ZVg9IjEiWT0iMSI+PFRpZmZEYXRhIEZpcnN0Qz0iMCIgRmlyc3RUPSIwIiBaPSIwIkQ9Im50PSIxVUlEIEZpTm1lZmlsZTovL0M6ZXJzdmVhbm9vbmNydHMvaXB4ZWxlc2RhdGVsbHJvaWxlckJ1Yl85'
+Metadata_Tags,"[""ImageNumber""]"
+Pipeline_Pipeline,"CellProfiler Pipeline: http://www.cellprofiler.org
+Version:5
+DateRevision:413
+GitHash:
+ModuleCount:38
+HasImagePlaneDetails:False
+
+Images:[module_num:1|svn_version:'Unknown'|variable_revision_number:2|show_window:False|notes:['To begin creating your project, use the Images module to compile a list of files and/or folders that you want to analyze. You can also specify a set of rules to include only the desired files in your selected folders.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    :
+    Filter images?:No filtering
+    Select the rule criteria:and (extension does isimage) (directory doesnot containregexp ""[\\\\/]\\."")
+
+Metadata:[module_num:2|svn_version:'Unknown'|variable_revision_number:6|show_window:False|notes:['The Metadata module optionally allows you to extract information describing your images (i.e, metadata) which will be stored along with your measurements. This information can be contained in the file name and/or location, or in an external file.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Extract metadata?:Yes
+    Metadata data type:Text
+    Metadata types:{}
+    Extraction method count:1
+    Metadata extraction method:Extract from file/folder names
+    Metadata source:File name
+    Regular expression to extract from file name:^(?P<Plate>.*)_(?P<Well>[A-P][0-9]{2})_s(?P<Site>[0-9])_w(?P<ChannelNumber>[0-9])
+    Regular expression to extract from folder name:(?P<Date>[0-9]{4}_[0-9]{2}_[0-9]{2})$
+    Extract metadata from:All images
+    Select the filtering criteria:and (file does contain """")
+    Metadata file location:Elsewhere...|
+    Match file and image metadata:[]
+    Use case insensitive matching?:No
+    Metadata file name:None
+    Does cached metadata exist?:No
+
+NamesAndTypes:[module_num:3|svn_version:'Unknown'|variable_revision_number:8|show_window:False|notes:['The NamesAndTypes module allows you to assign a meaningful name to each image by which other modules will refer to it.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Assign a name to:Images matching rules
+    Select the image type:Grayscale image
+    Name to assign these images:DNA
+    Match metadata:[{'ATF6': 'FileLocation', 'BetaTubulin': 'FileLocation', 'ConcanavalinA': 'FileLocation', 'DAPI': 'FileLocation', 'GOLPH4': 'FileLocation', 'HSP60': 'FileLocation', 'Nucleolin': 'FileLocation', 'Phalloidin': 'FileLocation', 'Sortilin': 'FileLocation', 'TOM20': 'FileLocation', 'WGA': 'FileLocation'}]
+    Image set matching method:Order
+    Set intensity range from:Image metadata
+    Assignments count:11
+    Single images count:0
+    Maximum intensity:255.0
+    Process as 3D?:No
+    Relative pixel spacing in X:1.0
+    Relative pixel spacing in Y:1.0
+    Relative pixel spacing in Z:1.0
+    Select the rule criteria:and (file does contain ""ATF6"")
+    Name to assign these images:ATF6
+    Name to assign these objects:Cell
+    Select the image type:Grayscale image
+    Set intensity range from:Image metadata
+    Maximum intensity:255.0
+    Select the rule criteria:and (file does contain ""BetaTubulin"")
+    Name to assign these images:BetaTubulin
+    Name to assign these objects:Nucleus
+    Select the image type:Grayscale image
+    Set intensity range from:Image metadata
+    Maximum intensity:255.0
+    Select the rule criteria:and (file does contain ""ConcanavalinA"")
+    Name to assign these images:ConcanavalinA
+    Name to assign these objects:Cytoplasm
+    Select the image type:Grayscale image
+    Set intensity range from:Image metadata
+    Maximum intensity:255.0
+    Select the rule criteria:and (file does contain ""DAPI"")
+    Name to assign these images:DAPI
+    Name to assign these objects:Speckle
+    Select the image type:Grayscale image
+    Set intensity range from:Image metadata
+    Maximum intensity:255.0
+    Select the rule criteria:and (file does contain ""GOLPH4"")
+    Name to assign these images:GOLPH4
+    Name to assign these objects:Object1
+    Select the image type:Grayscale image
+    Set intensity range from:Image metadata
+    Maximum intensity:255.0
+    Select the rule criteria:and (file does contain ""HSP60"")
+    Name to assign these images:HSP60
+    Name to assign these objects:Object2
+    Select the image type:Grayscale image
+    Set intensity range from:Image metadata
+    Maximum intensity:255.0
+    Select the rule criteria:and (file does contain ""Nucleolin"")
+    Name to assign these images:Nucleolin
+    Name to assign these objects:Object3
+    Select the image type:Grayscale image
+    Set intensity range from:Image metadata
+    Maximum intensity:255.0
+    Select the rule criteria:and (file does contain ""Phalloidin"")
+    Name to assign these images:Phalloidin
+    Name to assign these objects:Object4
+    Select the image type:Grayscale image
+    Set intensity range from:Image metadata
+    Maximum intensity:255.0
+    Select the rule criteria:and (file does contain ""Sortilin"")
+    Name to assign these images:Sortilin
+    Name to assign these objects:Object5
+    Select the image type:Grayscale image
+    Set intensity range from:Image metadata
+    Maximum intensity:255.0
+    Select the rule criteria:and (file does contain ""TOM20"")
+    Name to assign these images:TOM20
+    Name to assign these objects:Object6
+    Select the image type:Grayscale image
+    Set intensity range from:Image metadata
+    Maximum intensity:255.0
+    Select the rule criteria:and (file does contain ""WGA"")
+    Name to assign these images:WGA
+    Name to assign these objects:Object7
+    Select the image type:Grayscale image
+    Set intensity range from:Image metadata
+    Maximum intensity:255.0
+
+Groups:[module_num:4|svn_version:'Unknown'|variable_revision_number:2|show_window:False|notes:['The Groups module optionally allows you to split your list of images into image subsets (groups) which will be processed independently of each other. Examples of groupings include screening batches, microtiter plates, time-lapse movies, etc.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Do you want to group your images?:No
+    grouping metadata count:1
+    Metadata category:FileLocation
+
+IdentifyPrimaryObjects:[module_num:5|svn_version:'Unknown'|variable_revision_number:14|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:DAPI
+    Name the primary objects to be identified:dapi_object
+    Typical diameter of objects, in pixel units (Min,Max):100,1500
+    Discard objects outside the diameter range?:Yes
+    Discard objects touching the border of the image?:Yes
+    Method to distinguish clumped objects:Shape
+    Method to draw dividing lines between clumped objects:Shape
+    Size of smoothing filter:10
+    Suppress local maxima that are closer than this minimum allowed distance:7.0
+    Speed up by using lower-resolution image to find local maxima?:Yes
+    Fill holes in identified objects?:After both thresholding and declumping
+    Automatically calculate size of smoothing filter for declumping?:Yes
+    Automatically calculate minimum allowed distance between local maxima?:Yes
+    Handling of objects if excessive number of objects identified:Continue
+    Maximum number of objects:500
+    Display accepted local maxima?:No
+    Select maxima color:Blue
+    Use advanced settings?:Yes
+    Threshold setting version:12
+    Threshold strategy:Global
+    Thresholding method:Otsu
+    Threshold smoothing scale:1.5
+    Threshold correction factor:.8
+    Lower and upper bounds on threshold:0.0,1.0
+    Manual threshold:0.0
+    Select the measurement to threshold with:None
+    Two-class or three-class thresholding?:Two classes
+    Log transform before thresholding?:No
+    Assign pixels in the middle intensity class to the foreground or the background?:Foreground
+    Size of adaptive window:50
+    Lower outlier fraction:0.05
+    Upper outlier fraction:0.05
+    Averaging method:Mean
+    Variance method:Standard deviation
+    # of deviations:2.0
+    Thresholding method:Minimum Cross-Entropy
+
+IdentifySecondaryObjects:[module_num:6|svn_version:'Unknown'|variable_revision_number:10|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input objects:dapi_object
+    Name the objects to be identified:bt_objects
+    Select the method to identify the secondary objects:Propagation
+    Select the input image:BetaTubulin
+    Number of pixels by which to expand the primary objects:10
+    Regularization factor:0.05
+    Discard secondary objects touching the border of the image?:No
+    Discard the associated primary objects?:No
+    Name the new primary objects:FilteredNuclei
+    Fill holes in identified objects?:No
+    Threshold setting version:12
+    Threshold strategy:Global
+    Thresholding method:Otsu
+    Threshold smoothing scale:0.0
+    Threshold correction factor:0.7
+    Lower and upper bounds on threshold:0.0,1.0
+    Manual threshold:0.0
+    Select the measurement to threshold with:None
+    Two-class or three-class thresholding?:Two classes
+    Log transform before thresholding?:No
+    Assign pixels in the middle intensity class to the foreground or the background?:Foreground
+    Size of adaptive window:50
+    Lower outlier fraction:0.05
+    Upper outlier fraction:0.05
+    Averaging method:Mean
+    Variance method:Standard deviation
+    # of deviations:2.0
+    Thresholding method:Minimum Cross-Entropy
+
+IdentifySecondaryObjects:[module_num:7|svn_version:'Unknown'|variable_revision_number:10|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input objects:dapi_object
+    Name the objects to be identified:atf6_objects
+    Select the method to identify the secondary objects:Propagation
+    Select the input image:ATF6
+    Number of pixels by which to expand the primary objects:10
+    Regularization factor:0.05
+    Discard secondary objects touching the border of the image?:No
+    Discard the associated primary objects?:No
+    Name the new primary objects:FilteredNuclei
+    Fill holes in identified objects?:No
+    Threshold setting version:12
+    Threshold strategy:Global
+    Thresholding method:Otsu
+    Threshold smoothing scale:0.0
+    Threshold correction factor:1.2
+    Lower and upper bounds on threshold:0.0,1.0
+    Manual threshold:0.0
+    Select the measurement to threshold with:None
+    Two-class or three-class thresholding?:Two classes
+    Log transform before thresholding?:No
+    Assign pixels in the middle intensity class to the foreground or the background?:Foreground
+    Size of adaptive window:50
+    Lower outlier fraction:0.05
+    Upper outlier fraction:0.05
+    Averaging method:Mean
+    Variance method:Standard deviation
+    # of deviations:2.0
+    Thresholding method:Minimum Cross-Entropy
+
+IdentifySecondaryObjects:[module_num:8|svn_version:'Unknown'|variable_revision_number:10|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input objects:dapi_object
+    Name the objects to be identified:cona_objects
+    Select the method to identify the secondary objects:Propagation
+    Select the input image:ConcanavalinA
+    Number of pixels by which to expand the primary objects:10
+    Regularization factor:0.05
+    Discard secondary objects touching the border of the image?:No
+    Discard the associated primary objects?:No
+    Name the new primary objects:FilteredNuclei
+    Fill holes in identified objects?:No
+    Threshold setting version:12
+    Threshold strategy:Global
+    Thresholding method:Otsu
+    Threshold smoothing scale:0.0
+    Threshold correction factor:.9
+    Lower and upper bounds on threshold:0.0,1.0
+    Manual threshold:0.0
+    Select the measurement to threshold with:None
+    Two-class or three-class thresholding?:Two classes
+    Log transform before thresholding?:No
+    Assign pixels in the middle intensity class to the foreground or the background?:Foreground
+    Size of adaptive window:50
+    Lower outlier fraction:0.05
+    Upper outlier fraction:0.05
+    Averaging method:Mean
+    Variance method:Standard deviation
+    # of deviations:2.0
+    Thresholding method:Minimum Cross-Entropy
+
+IdentifySecondaryObjects:[module_num:9|svn_version:'Unknown'|variable_revision_number:10|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input objects:dapi_object
+    Name the objects to be identified:g4_objects
+    Select the method to identify the secondary objects:Propagation
+    Select the input image:GOLPH4
+    Number of pixels by which to expand the primary objects:10
+    Regularization factor:0.05
+    Discard secondary objects touching the border of the image?:No
+    Discard the associated primary objects?:No
+    Name the new primary objects:FilteredNuclei
+    Fill holes in identified objects?:No
+    Threshold setting version:12
+    Threshold strategy:Global
+    Thresholding method:Otsu
+    Threshold smoothing scale:0.0
+    Threshold correction factor:1.2
+    Lower and upper bounds on threshold:0.0,1.0
+    Manual threshold:0.0
+    Select the measurement to threshold with:None
+    Two-class or three-class thresholding?:Two classes
+    Log transform before thresholding?:No
+    Assign pixels in the middle intensity class to the foreground or the background?:Foreground
+    Size of adaptive window:50
+    Lower outlier fraction:0.05
+    Upper outlier fraction:0.05
+    Averaging method:Mean
+    Variance method:Standard deviation
+    # of deviations:2.0
+    Thresholding method:Minimum Cross-Entropy
+
+IdentifySecondaryObjects:[module_num:10|svn_version:'Unknown'|variable_revision_number:10|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input objects:dapi_object
+    Name the objects to be identified:ph_objects
+    Select the method to identify the secondary objects:Propagation
+    Select the input image:Phalloidin
+    Number of pixels by which to expand the primary objects:10
+    Regularization factor:0.05
+    Discard secondary objects touching the border of the image?:No
+    Discard the associated primary objects?:No
+    Name the new primary objects:FilteredNuclei
+    Fill holes in identified objects?:No
+    Threshold setting version:12
+    Threshold strategy:Global
+    Thresholding method:Otsu
+    Threshold smoothing scale:0.0
+    Threshold correction factor:1
+    Lower and upper bounds on threshold:0.0,1.0
+    Manual threshold:0.0
+    Select the measurement to threshold with:None
+    Two-class or three-class thresholding?:Two classes
+    Log transform before thresholding?:No
+    Assign pixels in the middle intensity class to the foreground or the background?:Foreground
+    Size of adaptive window:50
+    Lower outlier fraction:0.05
+    Upper outlier fraction:0.05
+    Averaging method:Mean
+    Variance method:Standard deviation
+    # of deviations:2.0
+    Thresholding method:Minimum Cross-Entropy
+
+IdentifySecondaryObjects:[module_num:11|svn_version:'Unknown'|variable_revision_number:10|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input objects:dapi_object
+    Name the objects to be identified:hsp60_objects
+    Select the method to identify the secondary objects:Propagation
+    Select the input image:HSP60
+    Number of pixels by which to expand the primary objects:10
+    Regularization factor:0.05
+    Discard secondary objects touching the border of the image?:No
+    Discard the associated primary objects?:No
+    Name the new primary objects:FilteredNuclei
+    Fill holes in identified objects?:No
+    Threshold setting version:12
+    Threshold strategy:Global
+    Thresholding method:Otsu
+    Threshold smoothing scale:0.0
+    Threshold correction factor:0.6
+    Lower and upper bounds on threshold:0.0,1.0
+    Manual threshold:0.0
+    Select the measurement to threshold with:None
+    Two-class or three-class thresholding?:Two classes
+    Log transform before thresholding?:No
+    Assign pixels in the middle intensity class to the foreground or the background?:Foreground
+    Size of adaptive window:50
+    Lower outlier fraction:0.05
+    Upper outlier fraction:0.05
+    Averaging method:Mean
+    Variance method:Standard deviation
+    # of deviations:2.0
+    Thresholding method:Minimum Cross-Entropy
+
+IdentifySecondaryObjects:[module_num:12|svn_version:'Unknown'|variable_revision_number:10|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input objects:dapi_object
+    Name the objects to be identified:t20_objects
+    Select the method to identify the secondary objects:Propagation
+    Select the input image:TOM20
+    Number of pixels by which to expand the primary objects:10
+    Regularization factor:0.05
+    Discard secondary objects touching the border of the image?:No
+    Discard the associated primary objects?:No
+    Name the new primary objects:FilteredNuclei
+    Fill holes in identified objects?:No
+    Threshold setting version:12
+    Threshold strategy:Global
+    Thresholding method:Otsu
+    Threshold smoothing scale:0.0
+    Threshold correction factor:0.8
+    Lower and upper bounds on threshold:0.0,1.0
+    Manual threshold:0.0
+    Select the measurement to threshold with:None
+    Two-class or three-class thresholding?:Two classes
+    Log transform before thresholding?:No
+    Assign pixels in the middle intensity class to the foreground or the background?:Foreground
+    Size of adaptive window:50
+    Lower outlier fraction:0.05
+    Upper outlier fraction:0.05
+    Averaging method:Mean
+    Variance method:Standard deviation
+    # of deviations:2.0
+    Thresholding method:Minimum Cross-Entropy
+
+IdentifySecondaryObjects:[module_num:13|svn_version:'Unknown'|variable_revision_number:10|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input objects:dapi_object
+    Name the objects to be identified:sor_objects
+    Select the method to identify the secondary objects:Propagation
+    Select the input image:Sortilin
+    Number of pixels by which to expand the primary objects:10
+    Regularization factor:0.05
+    Discard secondary objects touching the border of the image?:No
+    Discard the associated primary objects?:No
+    Name the new primary objects:FilteredNuclei
+    Fill holes in identified objects?:No
+    Threshold setting version:12
+    Threshold strategy:Global
+    Thresholding method:Otsu
+    Threshold smoothing scale:0.0
+    Threshold correction factor:.7
+    Lower and upper bounds on threshold:0.0,1.0
+    Manual threshold:0.0
+    Select the measurement to threshold with:None
+    Two-class or three-class thresholding?:Two classes
+    Log transform before thresholding?:No
+    Assign pixels in the middle intensity class to the foreground or the background?:Foreground
+    Size of adaptive window:50
+    Lower outlier fraction:0.05
+    Upper outlier fraction:0.05
+    Averaging method:Mean
+    Variance method:Standard deviation
+    # of deviations:2.0
+    Thresholding method:Minimum Cross-Entropy
+
+IdentifySecondaryObjects:[module_num:14|svn_version:'Unknown'|variable_revision_number:10|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input objects:dapi_object
+    Name the objects to be identified:wga_objects
+    Select the method to identify the secondary objects:Propagation
+    Select the input image:WGA
+    Number of pixels by which to expand the primary objects:10
+    Regularization factor:0.05
+    Discard secondary objects touching the border of the image?:No
+    Discard the associated primary objects?:No
+    Name the new primary objects:FilteredNuclei
+    Fill holes in identified objects?:No
+    Threshold setting version:12
+    Threshold strategy:Global
+    Thresholding method:Otsu
+    Threshold smoothing scale:0.0
+    Threshold correction factor:0.7
+    Lower and upper bounds on threshold:0.0,1.0
+    Manual threshold:0.0
+    Select the measurement to threshold with:None
+    Two-class or three-class thresholding?:Two classes
+    Log transform before thresholding?:No
+    Assign pixels in the middle intensity class to the foreground or the background?:Foreground
+    Size of adaptive window:50
+    Lower outlier fraction:0.05
+    Upper outlier fraction:0.05
+    Averaging method:Mean
+    Variance method:Standard deviation
+    # of deviations:2.0
+    Thresholding method:Minimum Cross-Entropy
+
+IdentifyPrimaryObjects:[module_num:15|svn_version:'Unknown'|variable_revision_number:14|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:Nucleolin
+    Name the primary objects to be identified:nuc_object
+    Typical diameter of objects, in pixel units (Min,Max):20,200
+    Discard objects outside the diameter range?:Yes
+    Discard objects touching the border of the image?:Yes
+    Method to distinguish clumped objects:None
+    Method to draw dividing lines between clumped objects:Intensity
+    Size of smoothing filter:10
+    Suppress local maxima that are closer than this minimum allowed distance:7.0
+    Speed up by using lower-resolution image to find local maxima?:Yes
+    Fill holes in identified objects?:Never
+    Automatically calculate size of smoothing filter for declumping?:Yes
+    Automatically calculate minimum allowed distance between local maxima?:Yes
+    Handling of objects if excessive number of objects identified:Continue
+    Maximum number of objects:500
+    Display accepted local maxima?:No
+    Select maxima color:Blue
+    Use advanced settings?:Yes
+    Threshold setting version:12
+    Threshold strategy:Global
+    Thresholding method:Otsu
+    Threshold smoothing scale:0
+    Threshold correction factor:4.5
+    Lower and upper bounds on threshold:0.0,1
+    Manual threshold:0.0
+    Select the measurement to threshold with:None
+    Two-class or three-class thresholding?:Three classes
+    Log transform before thresholding?:No
+    Assign pixels in the middle intensity class to the foreground or the background?:Foreground
+    Size of adaptive window:50
+    Lower outlier fraction:0.05
+    Upper outlier fraction:0.05
+    Averaging method:Mean
+    Variance method:Median absolute deviation
+    # of deviations:2
+    Thresholding method:Minimum Cross-Entropy
+
+MeasureObjectSizeShape:[module_num:16|svn_version:'Unknown'|variable_revision_number:3|show_window:False|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select object sets to measure:atf6_objects, bt_objects, cona_objects, dapi_object, g4_objects, hsp60_objects, nuc_object, ph_objects, sor_objects, t20_objects, wga_objects
+    Calculate the Zernike features?:No
+    Calculate the advanced features?:No
+
+MeasureObjectIntensity:[module_num:17|svn_version:'Unknown'|variable_revision_number:4|show_window:False|notes:[]|batch_state:array([], dtype=uint8)|enabled:False|wants_pause:False]
+    Select images to measure:ATF6, BetaTubulin, ConcanavalinA, DAPI, GOLPH4, HSP60, Nucleolin, Phalloidin, Sortilin, TOM20, WGA
+    Select objects to measure:atf6_objects, bt_objects, cona_objects, dapi_object, g4_objects, hsp60_objects, nuc_object, ph_objects, sor_objects, t20_objects, wga_objects
+
+MeasureObjectIntensity:[module_num:18|svn_version:'Unknown'|variable_revision_number:4|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select images to measure:ATF6
+    Select objects to measure:atf6_objects
+
+MeasureObjectIntensity:[module_num:19|svn_version:'Unknown'|variable_revision_number:4|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select images to measure:BetaTubulin
+    Select objects to measure:bt_objects
+
+MeasureObjectIntensity:[module_num:20|svn_version:'Unknown'|variable_revision_number:4|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select images to measure:ConcanavalinA
+    Select objects to measure:cona_objects
+
+MeasureObjectIntensity:[module_num:21|svn_version:'Unknown'|variable_revision_number:4|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select images to measure:DAPI
+    Select objects to measure:dapi_object
+
+MeasureObjectIntensity:[module_num:22|svn_version:'Unknown'|variable_revision_number:4|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select images to measure:GOLPH4
+    Select objects to measure:g4_objects
+
+MeasureObjectIntensity:[module_num:23|svn_version:'Unknown'|variable_revision_number:4|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select images to measure:HSP60
+    Select objects to measure:hsp60_objects
+
+MeasureObjectIntensity:[module_num:24|svn_version:'Unknown'|variable_revision_number:4|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select images to measure:Nucleolin
+    Select objects to measure:nuc_object
+
+MeasureObjectIntensity:[module_num:25|svn_version:'Unknown'|variable_revision_number:4|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select images to measure:Phalloidin
+    Select objects to measure:ph_objects
+
+MeasureObjectIntensity:[module_num:26|svn_version:'Unknown'|variable_revision_number:4|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select images to measure:Sortilin
+    Select objects to measure:sor_objects
+
+MeasureObjectIntensity:[module_num:27|svn_version:'Unknown'|variable_revision_number:4|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select images to measure:TOM20
+    Select objects to measure:t20_objects
+
+MeasureObjectIntensity:[module_num:28|svn_version:'Unknown'|variable_revision_number:4|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select images to measure:WGA
+    Select objects to measure:wga_objects
+
+ExportToSpreadsheet:[module_num:29|svn_version:'Unknown'|variable_revision_number:13|show_window:False|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:True]
+    Select the column delimiter:Comma ("","")
+    Add image metadata columns to your object data file?:No
+    Add image file and folder names to your object data file?:No
+    Select the measurements to export:No
+    Calculate the per-image mean values for object measurements?:No
+    Calculate the per-image median values for object measurements?:No
+    Calculate the per-image standard deviation values for object measurements?:No
+    Output file location:Default Input Folder sub-folder|Documents\\Python Scripts\\MultiplexOrganelles\\data_cell_profiler\\result
+    Create a GenePattern GCT file?:No
+    Select source of sample row name:Metadata
+    Select the image to use as the identifier:None
+    Select the metadata to use as the identifier:None
+    Export all measurement types?:Yes
+    Press button to select measurements:
+    Representation of Nan/Inf:NaN
+    Add a prefix to file names?:Yes
+    Filename prefix:BM_
+    Overwrite existing files without warning?:No
+    Data to export:Image
+    Combine these object measurements with those of the previous object?:No
+    File name:Image.csv
+    Use the object name for the file name?:No
+    Data to export:hsp60 - objects
+    Combine these object measurements with those of the previous object?:No
+    File name:Multiplex Data Sept.csv
+    Use the object name for the file name?:No
+    Data to export:t20 - objects
+    Combine these object measurements with those of the previous object?:Yes
+    File name:DATA.csv
+    Use the object name for the file name?:Yes
+    Data to export:bt - objects
+    Combine these object measurements with those of the previous object?:Yes
+    File name:DATA.csv
+    Use the object name for the file name?:Yes
+    Data to export:atf6 - objects
+    Combine these object measurements with those of the previous object?:Yes
+    File name:DATA.csv
+    Use the object name for the file name?:Yes
+    Data to export:g4 - objects
+    Combine these object measurements with those of the previous object?:Yes
+    File name:DATA.csv
+    Use the object name for the file name?:Yes
+    Data to export:sor - objects
+    Combine these object measurements with those of the previous object?:Yes
+    File name:DATA.csv
+    Use the object name for the file name?:Yes
+    Data to export:cona - objects
+    Combine these object measurements with those of the previous object?:Yes
+    File name:DATA.csv
+    Use the object name for the file name?:Yes
+    Data to export:ph - objects
+    Combine these object measurements with those of the previous object?:Yes
+    File name:DATA.csv
+    Use the object name for the file name?:Yes
+    Data to export:wga - objects
+    Combine these object measurements with those of the previous object?:Yes
+    File name:DATA.csv
+    Use the object name for the file name?:Yes
+    Data to export:nuc - object
+    Combine these object measurements with those of the previous object?:Yes
+    File name:DATA.csv
+    Use the object name for the file name?:Yes
+
+IdentifyTertiaryObjects:[module_num:30|svn_version:'Unknown'|variable_revision_number:3|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:False|wants_pause:False]
+    Select the larger identified objects:atf6_objects
+    Select the smaller identified objects:Nucleus
+    Name the tertiary objects to be identified:Cytoplasm_atf6
+    Shrink smaller object prior to subtraction?:Yes
+
+IdentifyTertiaryObjects:[module_num:31|svn_version:'Unknown'|variable_revision_number:3|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:False|wants_pause:False]
+    Select the larger identified objects:bt_objects
+    Select the smaller identified objects:Nucleus
+    Name the tertiary objects to be identified:Cytoplasm_bt
+    Shrink smaller object prior to subtraction?:Yes
+
+IdentifyTertiaryObjects:[module_num:32|svn_version:'Unknown'|variable_revision_number:3|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:False|wants_pause:False]
+    Select the larger identified objects:cona_objects
+    Select the smaller identified objects:Nucleus
+    Name the tertiary objects to be identified:Cytoplasm_cona
+    Shrink smaller object prior to subtraction?:Yes
+
+IdentifyTertiaryObjects:[module_num:33|svn_version:'Unknown'|variable_revision_number:3|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:False|wants_pause:False]
+    Select the larger identified objects:g4_objects
+    Select the smaller identified objects:Nucleus
+    Name the tertiary objects to be identified:Cytoplasm_g4
+    Shrink smaller object prior to subtraction?:Yes
+
+IdentifyTertiaryObjects:[module_num:34|svn_version:'Unknown'|variable_revision_number:3|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:False|wants_pause:False]
+    Select the larger identified objects:hsp60_objects
+    Select the smaller identified objects:Nucleus
+    Name the tertiary objects to be identified:Cytoplasm_hsp60
+    Shrink smaller object prior to subtraction?:Yes
+
+IdentifyTertiaryObjects:[module_num:35|svn_version:'Unknown'|variable_revision_number:3|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:False|wants_pause:False]
+    Select the larger identified objects:ph_objects
+    Select the smaller identified objects:Nucleus
+    Name the tertiary objects to be identified:Cytoplasm_ph
+    Shrink smaller object prior to subtraction?:Yes
+
+IdentifyTertiaryObjects:[module_num:36|svn_version:'Unknown'|variable_revision_number:3|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:False|wants_pause:False]
+    Select the larger identified objects:sor_objects
+    Select the smaller identified objects:Nucleus
+    Name the tertiary objects to be identified:Cytoplasm_sor
+    Shrink smaller object prior to subtraction?:Yes
+
+IdentifyTertiaryObjects:[module_num:37|svn_version:'Unknown'|variable_revision_number:3|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:False|wants_pause:False]
+    Select the larger identified objects:t20_objects
+    Select the smaller identified objects:Nucleus
+    Name the tertiary objects to be identified:Cytoplasm_t20
+    Shrink smaller object prior to subtraction?:Yes
+
+IdentifyTertiaryObjects:[module_num:38|svn_version:'Unknown'|variable_revision_number:3|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:False|wants_pause:False]
+    Select the larger identified objects:wga_objects
+    Select the smaller identified objects:Nucleus
+    Name the tertiary objects to be identified:Cytoplasm_wga
+    Shrink smaller object prior to subtraction?:Yes
+"
+Run_Timestamp,2022-03-25T01:02:51.270986
