@@ -1,0 +1,5 @@
+In the folder names, the first name is Red channel and the second name is Green channel of the image. Blue channel is DAPI.
+For example, ATF6_ConcanavalinA
+ATF6 - red
+ConcanavalinA - green
+DAPI - blue
