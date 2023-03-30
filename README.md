@@ -70,4 +70,4 @@ Finally, we visually confirm organelle localization with superpixel segmentation
 "figures" folder contains generated figures for the paper
 
 ## Citation
-**Please Cite:**  (under review)
+**Please Cite:** https://doi.org/10.1038/s41598-023-32474-y (in press)
